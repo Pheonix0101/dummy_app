@@ -1,6 +1,5 @@
 import 'package:lottie/lottie.dart';
 
-
 class LottieHelper{
   static const String _LOTTIE1 = "assets/lottie1.json";
   static const String _LOTTIE2 = "assets/lottie2.json";

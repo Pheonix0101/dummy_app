@@ -1,21 +1,19 @@
 import 'dart:math';
 
-import 'package:dummy_app/lottie_sliders/Journeys.dart';
+import 'package:dummy_app/lottie_sliders/slider_config.dart';
 import 'package:flutter/material.dart';
 
-import 'package:liquid_swipe/Helpers/Helpers.dart';
-import 'package:liquid_swipe/PageHelpers/LiquidController.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
-class JourneyScreen extends StatefulWidget {
+class SliderScreen extends StatefulWidget {
   State myApp;
-  JourneyScreen({this.myApp});
+  SliderScreen({this.myApp});
 
   @override
-  _JourneyScreenState createState() => _JourneyScreenState();
+  _SliderScreenState createState() => _SliderScreenState();
 }
 
-class _JourneyScreenState extends State<JourneyScreen> {
+class _SliderScreenState extends State<SliderScreen> {
   int page = 0;
   LiquidController liquidController;
   UpdateType updateType;
@@ -53,7 +51,7 @@ class _JourneyScreenState extends State<JourneyScreen> {
 
   @override
   Widget build(BuildContext context) {
-    pages = Journeys.getJourneys(context, _changeJourney);
+    pages = SliderConfig.getJourneys(context, _changeJourney);
     return Scaffold(
       body: Stack(
         children: <Widget>[

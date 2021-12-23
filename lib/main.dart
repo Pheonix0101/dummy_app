@@ -1,4 +1,4 @@
-import 'package:dummy_app/lottie_sliders/JourneyScreen.dart';
+import 'package:dummy_app/lottie_sliders/slider_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // });
     Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (BuildContext context) => JourneyScreen(),
+        builder: (BuildContext context) => SliderScreen(),
       ),
     );
   }
